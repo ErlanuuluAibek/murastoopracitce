@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Course course=new Course("Id2005","Asan","Aidana");
-        EnglishCourse englishCourse=new EnglishCourse(course);
-        Course course2=new Course("Id2005","Aibek","Meder,Timur");
-        ItCourse itCourse=new ItCourse(course2);
-        System.out.println(englishCourse);
-        System.out.println(itCourse);
+        EnglishCourse englishCourse=new EnglishCourse("Id2005","Aibek","Aidana");
+        Course course=new Course(englishCourse.getId(), englishCourse.getStudentName(), englishCourse.getTeacherName());
+        ItCourse itCourse=new ItCourse("id205","Aibek","Meder,Timur");
+        Course course2=new Course(itCourse.getId(), itCourse.getStudentName(), itCourse.getTeacherName());
+        System.out.println(course);
+        System.out.println(course2);
     }
 }
